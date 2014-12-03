@@ -47,6 +47,7 @@ public class MenuActivity extends FragmentActivity implements View.OnClickListen
         itemProfile  = new ResideMenuItem(this, R.drawable.icon_profile,  "Profile");
         itemCalendar = new ResideMenuItem(this, R.drawable.icon_calendar, "Calendar");
         itemSettings = new ResideMenuItem(this, R.drawable.icon_settings, "Settings");
+        resideMenu.setShadowVisible(false);
 
         itemHome.setOnClickListener(this);
         itemProfile.setOnClickListener(this);

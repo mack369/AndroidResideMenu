@@ -386,7 +386,9 @@ public class ResideMenu extends FrameLayout{
         AnimatorSet scaleDown = new AnimatorSet();
         scaleDown.playTogether(
                 ObjectAnimator.ofFloat(target, "scaleX", targetScaleX),
-                ObjectAnimator.ofFloat(target, "scaleY", targetScaleY)
+                ObjectAnimator.ofFloat(target, "scaleY", targetScaleY),
+                ObjectAnimator.ofInt(target, "left", 10),
+                ObjectAnimator.ofInt(target, "top", 10)
         );
 
         scaleDown.setInterpolator(AnimationUtils.loadInterpolator(activity,
@@ -408,7 +410,9 @@ public class ResideMenu extends FrameLayout{
         AnimatorSet scaleUp = new AnimatorSet();
         scaleUp.playTogether(
                 ObjectAnimator.ofFloat(target, "scaleX", targetScaleX),
-                ObjectAnimator.ofFloat(target, "scaleY", targetScaleY)
+                ObjectAnimator.ofFloat(target, "scaleY", targetScaleY),
+                ObjectAnimator.ofInt(target, "left", 0),
+                ObjectAnimator.ofInt(target, "top", 0)
         );
 
         scaleUp.setDuration(250);

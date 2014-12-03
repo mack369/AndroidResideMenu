@@ -30,6 +30,8 @@ class TouchDisableView extends ViewGroup {
         if (mContent != null) {
             this.removeView(mContent);
         }
+        v.setBackgroundResource(R.drawable.shadow);
+        v.setPadding(0, 0, 0, 0);
         mContent = v;
         addView(mContent);
     }
