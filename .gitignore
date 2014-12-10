@@ -31,3 +31,6 @@ proguard/
 .gradle/
 build/
 .DS_Store
+/gradle/wrapper/gradle-wrapper.jar
+/gradle/wrapper/gradle-wrapper.properties
+/gradlew
