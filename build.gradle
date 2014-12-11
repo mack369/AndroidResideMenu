@@ -8,7 +8,7 @@ println "-------------------------------------------------\n"
 
 ext {
     compileSdkVersion = 21
-    buildToolsVersion = System.properties['buildToolsVersion']
+    buildToolsVersion = "21.1.1"
     minSdkVersion = 9
     targetSdkVersion = 21
 }
